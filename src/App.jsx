@@ -1,4 +1,4 @@
-import Final from './tutorial/03-conditional-rendering/starter/01-multiple-returns-basics'
+import Final from './tutorial/03-conditional-rendering/starter/07-user-challenge'
 
 function App() {
   return (
