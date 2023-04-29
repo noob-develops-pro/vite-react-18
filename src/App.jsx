@@ -1,4 +1,4 @@
-import Final from './tutorial/03-conditional-rendering/starter/07-user-challenge'
+import Final from './tutorial/06-forms/starter/04-other-inputs'
 
 function App() {
   return (
