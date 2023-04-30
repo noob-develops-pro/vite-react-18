@@ -13,7 +13,7 @@ const UserChallenge = () => {
       return
     }
     const newUser = { id: Date.now(), name }
-    // setUsers({ ...users, newUser }) //dont do this
+    // setUsers([...users, newUser]) //works fine
     const updatedUsers = [...users, newUser]
     setUsers(updatedUsers)
     setName('')

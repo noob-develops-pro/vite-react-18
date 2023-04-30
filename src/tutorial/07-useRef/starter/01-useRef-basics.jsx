@@ -1,11 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react'
 
 const UseRefBasics = () => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0)
+  const valueRef = useRef(null)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+    e.preventDefault()
+    console.log(valueRef.current.value)
+    valueRef.current.value = null
+  }
 
   return (
     <div>
@@ -14,7 +17,7 @@ const UseRefBasics = () => {
           <label htmlFor='name' className='form-label'>
             Name
           </label>
-          <input type='text' id='name' className='form-input' />
+          <input type='text' id='name' className='form-input' ref={valueRef} />
         </div>
         <button type='submit' className='btn btn-block'>
           submit
@@ -25,7 +28,7 @@ const UseRefBasics = () => {
         increase
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default UseRefBasics;
+export default UseRefBasics
