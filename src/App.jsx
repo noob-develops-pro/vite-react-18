@@ -1,4 +1,4 @@
-import Final from './tutorial/09-context-api/starter/Navbar'
+import Final from './tutorial/09-context-api/context/Navbar'
 
 function App() {
   return (

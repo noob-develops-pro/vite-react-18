@@ -18,7 +18,7 @@ const Navbar = () => {
   // )
   return (
     <nav className='navbar'>
-      <h5>Context Api</h5>
+      <h5>prop Drilling</h5>
       <NavLinks user={user} logout={handleLogout} />
     </nav>
   )

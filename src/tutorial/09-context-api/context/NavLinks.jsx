@@ -9,7 +9,7 @@ function NavLinks({ user, logout }) {
           <a href='#'>About</a>
         </li>
       </ul>
-      <UserContainer user={user} logout={logout} />
+      <UserContainer />
     </div>
   )
 }
