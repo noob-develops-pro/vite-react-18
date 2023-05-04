@@ -6,12 +6,13 @@ const UncontrolledInputs = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const formData = new FormData(e.currentTarget)
-    // const name = formData.get('name')
-    // const email = formData.get('email')
-    // const password = formData.get('password')
-    // console.log([...formData.entries()])
+    // to get the value of a name u must give name attribute to input tag
+    // const name = formData.get('name') <input name = 'name'/>
+    // const email = formData.get('email') <input name = 'email'/>
+    // const password = formData.get('password') <input name = 'password'/>
+    // console.log([...formData.entries()]) data stored in arr of key-value pair [{name:'valueOfName'}]
 
-    const newUser = Object.fromEntries(formData)
+    const newUser = Object.fromEntries(formData) //Object.fromEntries() ES20 feature
     setUser([...user, newUser])
     console.log(user)
     console.log(user.length)
